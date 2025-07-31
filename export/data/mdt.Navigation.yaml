@@ -1,0 +1,10 @@
+businessUnit:
+  ID_Object: bi.BusinessUnit
+  ID_Parent: '{{__dir}__masterData}__product'
+  Position: 2
+  Title_en: Business units
+skuAdditionalInfo:
+  ID_Object: md_bi.SKUAdditionalInfo
+  ID_Parent: '{{{__dir}__masterData}__product}__sku'
+  Position: 1
+  Title_en: SKU additional information
