@@ -8,3 +8,5 @@ create table [md_bi].[SKUAdditionalInfo] (
 	constraint [FK_SKUAdditionalInfo_Principal] foreign key ([MDT_ID_PrincipalCreatedBy]) references [mdt].[Principal] ([ID]) on delete no action on update no action,
 	constraint [FK_SKUAdditionalInfo_SKU] foreign key ([ID]) references [md].[SKU] ([ID]) on delete no action on update no action
 );
+go
+alter table [md_bi].[SKUAdditionalInfo] nocheck constraint [FK_SKUAdditionalInfo_SKU];
